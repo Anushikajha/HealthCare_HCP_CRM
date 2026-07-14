@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: hcp-crm-backend
+    env: docker
+    plan: free
+    repo: https://github.com/Anushikajha/HealthCare_HCP_CRM
+    branch: master
+    buildCommand: null
+    startCommand: null
+    root: backend

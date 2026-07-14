@@ -106,7 +106,32 @@ export const sendChatMessage = createAsyncThunk(
 const interactionsSlice = createSlice({
   name: 'interactions',
   initialState: {
-    items: [],
+    items: [
+      {
+        id: 101,
+        doctor_name: 'Shampa Jha',
+        hospital: 'Mother Land Hospital',
+        interaction_date: '2026-07-13',
+        product: 'Glycomet',
+        discussion_notes: 'Discussed Glycomet benefits and requested samples.',
+        ai_summary: 'Interaction summary: Discussed Glycomet with Dr. Shampa Jha. Explained product benefits and usage. Doctor showed positive interest.',
+        follow_up_date: '2026-07-20',
+        next_action: 'Deliver samples',
+        created_at: '2026-07-13T08:00:00'
+      },
+      {
+        id: 102,
+        doctor_name: 'Ravi Kumar',
+        hospital: 'City General',
+        interaction_date: '2026-07-12',
+        product: 'CardioX',
+        discussion_notes: 'Introduced CardioX and patient case studies.',
+        ai_summary: 'Shared CardioX efficacy and upcoming studies.',
+        follow_up_date: null,
+        next_action: null,
+        created_at: '2026-07-12T10:30:00'
+      }
+    ],
     loading: false,
     error: null,
     chatHistory: [
